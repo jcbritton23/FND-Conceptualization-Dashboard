@@ -1,0 +1,5 @@
+{
+  "name": "FND Supervision Dashboard",
+  "description": "An interactive web dashboard for clinical supervision sessions, focusing on an integrated, modern approach to case conceptualization for Functional Neurological Disorder (FND).",
+  "requestFramePermissions": []
+}
