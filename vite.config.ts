@@ -4,7 +4,7 @@ import { defineConfig, loadEnv } from 'vite';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
-      base: '/FND-Conceptualization-Dashboard/',
+      base: './',
       build: {
         outDir: 'docs',
       },
