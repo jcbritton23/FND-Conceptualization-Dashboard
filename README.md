@@ -23,5 +23,4 @@ View your app in AI Studio: https://ai.studio/apps/drive/1QiaijfZOrudUoVT4I4vkN5
 
 1. Create the static site:
    `npm run build`
-2. Commit the generated `docs` directory and enable GitHub Pages to serve from it.
-   The site will then be available from your public repository link.
+2. Commit the generated `docs` directory and enable GitHub Pages to serve from it. The site will then be available from your public repository link.
