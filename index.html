@@ -62,12 +62,13 @@
       }
     </script>
     <script>
-      // Redirect to a trailing slash so relative asset URLs resolve correctly
+      // Ensure the URL ends with a trailing slash so relative paths resolve
       (function () {
         const { pathname, search, hash } = window.location;
-        const last = pathname.split('/').pop();
-        const needsSlash = !pathname.endsWith('/') && (!last || !last.includes('.'));
-        if (needsSlash) {
+        const lastSegment = pathname.split('/').pop();
+        const missingSlash =
+          !pathname.endsWith('/') && (!lastSegment || !lastSegment.includes('.'));
+        if (missingSlash) {
           window.location.replace(pathname + '/' + search + hash);
         }
       })();
